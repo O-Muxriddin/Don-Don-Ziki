@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Favicon links -->
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png." />
+    <meta name="apple-mobile-web-app-title" content="Don-Don-Ziki" />
+    <link rel="manifest" href="site.webmanifest" />
+    <!--Tailwind-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="bg-gray-900">
+
+    <div id="gameZone" class="flex justify-center itmes-center gap-50 p-10">
+        <img class="hand-js  grid-cols-2" src="./img/paper.png" alt="paper">
+        <img class="hand-js  " src="./img/rock.png" alt="rock">
+      
+        <img class="hand-js" src="./img/scissors.png" alt="scissors">
+  
+    </div>
+  
+
+    <div id="resultZone">
+         <img id="user" src="" alt="user">
+         <button id="refreshGame">Play Again</button>
+        <img id="robot" src="" alt="robot">
+    </div>
+    <script src="./js/app.js" type="module"></script>
+</body>
+</html>
