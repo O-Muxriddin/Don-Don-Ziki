@@ -17,19 +17,19 @@
 </head>
 <body class="bg-gray-900">
 
-    <div id="gameZone" class="flex justify-center itmes-center gap-50 p-10">
-        <img class="hand-js  grid-cols-2" src="./img/paper.png" alt="paper">
-        <img class="hand-js  " src="./img/rock.png" alt="rock">
+    <div id="gameZone" class="flex justify-center items-center gap-[50px] p-10 sm:flex-row ">
+        <img class="hand-js  w-20 sm:w-32" src="./img/paper.png" alt="paper">
+        <img class="hand-js  w-20 sm:w-32" src="./img/rock.png" alt="rock">
       
-        <img class="hand-js" src="./img/scissors.png" alt="scissors">
+        <img class="hand-js  w-20 sm:w-32" src="./img/scissors.png" alt="scissors">
   
     </div>
   
 
-    <div id="resultZone">
-         <img id="user" src="" alt="user">
-         <button id="refreshGame">Play Again</button>
-        <img id="robot" src="" alt="robot">
+    <div id="resultZone" class="flex justify-center items-center gap-10 p-10 hidden ">
+         <img id="user" class=" w-20 sm:w-32 "  src="" alt="user">
+         <button id="refreshGame" class=" rounded-[8px] border-white border-[4px bg-gray-200">Play Again</button>
+        <img id="robot" class="w-20 sm:w-32 " src="" alt="robot">
     </div>
     <script src="./js/app.js" type="module"></script>
 </body>
