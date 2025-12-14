@@ -19,16 +19,21 @@ function swapZone (boolean) {
 }}
 
 // Find winner
+ let score=0;
  function findWinner (user, robot) {
     if (user === robot) {
         return 'TIE';
-    }else if (user === 'paper' && robot === 'scissors' || user === 'rock' && robot === 'paper' || user === 'scissors' && robot === 'rock') {
+    }else if (user === 'paper' && robot === 'scissors') {
+        score=score+1/2;
         return 'ROBOT';
-    }else  if (user === 'scissors' && robot === 'rock' || user === 'rock' && robot === 'paper' || user === 'scissors' && robot === 'rock') {
+    }else  if (user === 'scissors' && robot === 'rock' ) {
+        score=score-1/2;
         return 'ROBOT';
-    }else  if (user === 'rock' && robot === 'paper' || user === 'rock' && robot === 'paper' || user === 'scissors' && robot === 'rock') {
+    }else  if (user === 'rock' && robot === 'paper') {
+        score=score+1/2;
         return 'ROBOT';
     }else {
+        score=score-1/2;
         return 'USER';
     }
  }
