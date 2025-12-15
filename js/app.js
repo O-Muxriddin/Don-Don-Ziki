@@ -1,4 +1,4 @@
-import { elHands,elUser,elRobot, elRefershGame, elGameZone,elResultZone} from "./html-el.js";
+import { elHands,elUser,elRobot, elRefershGame, elGameZone,elResultZone, elTextName} from "./html-el.js";
 
 //   robot choose 
 function robotchoose() {
@@ -14,7 +14,7 @@ function swapZone (boolean) {
          elResultZone.style.display = 'flex';
      }
         else {
-         elGameZone.style.display = 'block';
+         elGameZone.style.display = 'flex';
          elResultZone.style.display = 'none';
 }}
 
@@ -50,10 +50,11 @@ elHands.forEach(elhand => {
         elUser.src = evnt.target.src;
         elRobot.src = "./img/hand-load.svg";
 
+
         setTimeout(() => {
             elRobot.src = `./img/${robot}.png`;
-          const winner = findWinner(user, robot);
-            alert(winner);
+            const winner = findWinner(user, robot);
+            elTextName.textContent = winner;
         }, 1000 ,)
         ;
     })});
