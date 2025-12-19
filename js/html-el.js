@@ -5,5 +5,6 @@ const elRefershGame = document.querySelector('#refreshGame');
 const elGameZone = document.querySelector('#gameZone');
 const elResultZone = document.querySelector('#resultZone');
 let elTextName = document.querySelector("#textname");
-
-export { elHands, elUser, elRobot, elRefershGame, elGameZone, elResultZone, elTextName};
+const elModeChanger = document.querySelector('#modeChanger');
+let elAdvancedMode = document.getElementById("advancedMode");
+export {elHands, elUser, elRobot, elRefershGame, elGameZone, elResultZone, elTextName,elModeChanger,elAdvancedMode};
